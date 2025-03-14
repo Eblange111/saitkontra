@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lk</title>
+    <link rel="stylesheet" href="../style/lk.css">
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a class="menuItem" href="login.html">Авторизация</a></li>
+            <li><a class="menuItem" href="tovary.html">Товары</a></li>
+            <li><a class="menuItem" href="onas.html">О нас</a></li>
+            <li><a class="menuItem" href="blog.html">Информация</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons"><img src="../assets/images/burger.png" class="burg"></i>
+            <i class="closeIcon material-icons"><img src="../assets/images/krest.png" class="burg"></i>
+          </button>
+          <script src="../js/js.js"></script>
+        <div class="flexhead">
+            <div class="flexpodhead">
+                <a href="../index.html"><img src="../assets/images/logo.png" class="logohead"></a>
+                <div class="lefthead">
+                    <a href="tovary.html" class="headtext">Товары</a>
+                    <div class="headtext">|</div>
+                    <a href="onas.html" class="headtext">О нас</a>
+                    <div class="headtext">|</div>
+                    <a href="blog.html" class="headtext">Информация</a>
+                </div>
+            </div>   
+            <div class="loginiconpoz">
+                <a href="../pages/login.html"><img src="../assets/images/loginicon.png" class="loginicon"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="profile">
+            <div>
+                <div class="avatar-section">
+                    <img src="../assets/images/1686294968_polinka-top-p-kartinka-cheloveka-bez-fona-vkontakte-45.png" alt="Аватар" class="avatar" id="avatar">
+                    <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+                    <button onclick="('avatar-upload').click()">Изменить аватар</button>
+                </div>
+                <div class="nickname-section">
+                    <label for="nickname">Никнейм:</label>
+                    <input type="text" id="nickname" value="Гость-345U6YG3U456">
+                    <button onclick="">Сохранить</button>
+                </div>
+            </div>
+            
+            <div class="bonus-points">
+                <p>Бонусные баллы: <span id="bonus-points">500</span></p>
+            </div>
+        </section>
+
+        <section class="orders">
+            <h2 class="text-1">Заказы</h2>
+            <div class="active-orders">
+                <h3 class="text-2">Активные заказы</h3>
+                <ul id="active-orders-list">
+                    <li>Заказ #32345</li>
+                    <li>Заказ #12346</li>
+                </ul>
+            </div>
+            <div class="completed-orders">
+                <h3 class="text-2">Завершенные заказы</h3>
+                <ul id="completed-orders-list">
+                    <li>Заказ #15344</li>
+                    <li>Заказ #34343</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2 class="text-1">Контактные данные</h2>
+            <form id="contact-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Сохранить</button>
+            </form>
+        </section>
+    </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Мы — компания, которая занимается созданием качественных продуктов для вашего удобства.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul>
+                    <li>Email: info@example.com</li>
+                    <li>Телефон: +7 (123) 456-78-90</li>
+                    <li>Адрес: г. Москва, ул. Примерная, д. 123</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ваш Сайт. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

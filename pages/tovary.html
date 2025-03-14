@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tovary</title>
+    <link rel="stylesheet" href="../style/tovary.css">
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a class="menuItem" href="login.html">Авторизация</a></li>
+            <li><a class="menuItem" href="tovary.html">Товары</a></li>
+            <li><a class="menuItem" href="onas.html">О нас</a></li>
+            <li><a class="menuItem" href="blog.html">Информация</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons"><img src="../assets/images/burger.png" class="burg"></i>
+            <i class="closeIcon material-icons"><img src="../assets/images/krest.png" class="burg"></i>
+          </button>
+          <script src="../js/js.js"></script>
+        <div class="flexhead">
+            <div class="flexpodhead">
+                <a href="../index.html"><img src="../assets/images/logo.png" class="logohead"></a>
+                <div class="lefthead">
+                    <a href="tovary.html" class="headtext">Товары</a>
+                    <div class="headtext">|</div>
+                    <a href="onas.html" class="headtext">О нас</a>
+                    <div class="headtext">|</div>
+                    <a href="blog.html" class="headtext">Информация</a>
+                </div>
+            </div>   
+            <div class="loginiconpoz">
+                <a href="../pages/login.html"><img src="../assets/images/loginicon.png" class="loginicon"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Фильтр</button>
+            <div id="myDropdown" class="dropdown-content">
+
+                <div class="filters" id="drop">   
+                    <div class="size">
+                        <h2 class="filtext">Краски</h2>
+                        <div id="myDropdown">
+                            <input type="checkbox" class="btn" value="MSI">Зеленая<br>
+                            <input type="checkbox" class="btn" value="MSI">Красная<br>
+                            <input type="checkbox" class="btn" value="Lenovo"> Белая<br>
+                            <input type="checkbox" class="btn" value="Honor">Черная<br>
+                        </div>
+                    </div>
+
+                    <div class="size">
+                        <h2 class="filtext">Кисти</h2>
+                        <div id="myDropdown">
+                            <input type="checkbox" class="btn" value="MSI">2<br>
+                            <input type="checkbox" class="btn" value="Lenovo">4<br>
+                            <input type="checkbox" class="btn" value="Honor">6 <br>
+                            <input type="checkbox" class="btn" value="ASUS">8<br>
+                        </div>
+                    </div>
+
+                    <div class="size">
+                        <h2 class="filtext">Аксессуары</h2>
+                        <div id="myDropdown">
+                            <input type="checkbox" class="btn" value="MSI">Палитры<br>
+                            <input type="checkbox" class="btn" value="Lenovo"> Сумки<br>
+                            <input type="checkbox" class="btn" value="Honor">Органайзеры <br>
+                            <input type="checkbox" class="btn" value="ASUS">Растушевки<br>
+                        </div>
+                    </div>
+
+                    <div class="size">
+                        <h2 class="filtext">Грунты</h2>
+                        <div id="myDropdown">
+                            <input type="checkbox" class="btn" value="MSI">Клеевой<br>
+                            <input type="checkbox" class="btn" value="Lenovo">Масляный<br>
+                            <input type="checkbox" class="btn" value="Lenovo">Эмульсионный<br>
+                            <input type="checkbox" class="btn" value="Lenovo">Акриловый<br>
+                        </div>
+                    </div>
+
+                    <div class="size">
+                        <h2 class="filtext">Текстурные пасты</h2>
+                        <div id="myDropdown">
+                            <input type="checkbox" class="btn" value="MSI">Универсальная<br>
+                            <input type="checkbox" class="btn" value="Lenovo">Гибкая<br>
+                            <input type="checkbox" class="btn" value="Lenovo">Рельефная<br>
+                            <input type="checkbox" class="btn" value="Lenovo">Масляная<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-1">Краски</p>
+
+        <div class="content">
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kraska1.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 000</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Красок
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kraska2.jpg">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 000</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Красок
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kraska3.jpg">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 000</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Красок
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kraska4.jpeg">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 000</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Красок
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-1">Кисти</p>
+
+        <div class="content">
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kisti.jpg">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">15 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Кистей
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kisti5.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">15 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Кистей
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kisti3.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">15 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Кистей
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/kisti4.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">15 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Набор Кистей
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="filters1" id="drop">   
+        </div>
+
+        <p class="text-1">Аксессуары</p>
+
+        <div class="content">
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/acsess1.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 000</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Палитра
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/acsess2.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 000</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Палитра
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/acsess3.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 500</div>
+                    <div class="card__price card__price--common">11 700</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Непроливайка
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/acsess4.jpg">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 500</div>
+                    <div class="card__price card__price--common">11 700</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Непроливайка
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-1">Грунты</p>
+
+        <div class="content">
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/grunt1.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">14 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Грунт для живописи
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/grunt2.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">14 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Грунт для живописи
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/grunt3.jpg">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">14 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Грунт для живописи
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/grunt4.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">13 000</div>
+                    <div class="card__price card__price--common">14 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Грунт для живописи
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-1">Текстурные пасты</p>
+
+        <div class="content">
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/pasta1.jpg">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 100</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Текстурная паста
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/pasta2.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 100</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Текстурная паста
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/pasta3.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 100</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Текстурная паста
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                <!-- Изображение-ссылка товара -->
+                <a href="#" class="card__image">
+                    <img
+                    src="../assets/images/pasta4.webp">
+                </a>
+                <!-- Скидка на товар -->
+                <div class="card__label">-10%</div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                <!-- Цены на товар (с учетом скидки и без)-->
+                <div class="card__prices">
+                    <div class="card__price card__price--discount">10 100</div>
+                    <div class="card__price card__price--common">11 000</div>
+                </div>
+                <!-- Ссылка-название товара -->
+                <a href="#" class="card__title">
+                    Текстурная паста
+                </a>
+                <!-- Кнопка добавить в корзину -->
+                <button class="card__add">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Мы — компания, которая занимается созданием качественных продуктов для вашего удобства.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul>
+                    <li>Email: info@example.com</li>
+                    <li>Телефон: +7 (123) 456-78-90</li>
+                    <li>Адрес: г. Москва, ул. Примерная, д. 123</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ваш Сайт. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
